@@ -4,11 +4,12 @@
 
 ## Overview
 
-
 All with #Graph
 * DSA: Linked List, Tree
 * PGM: Factor Graph, Bayes Net, MRF 
 * Estimation: BP, DP, NLS
+* Chemistry: Molecular
+
 
 ## Graph Theory
 
@@ -26,3 +27,10 @@ All with #Graph
 ## Gallery
 
 - [Python Graph Gallery](https://python-graph-gallery.com/)
+
+
+## App
+
+### Graph and Tensor
+
+### Graph and SLAM
