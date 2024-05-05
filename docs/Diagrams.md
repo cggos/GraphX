@@ -1,12 +1,12 @@
 # Diagrams
 
-* xkcd styled chart
-    - [xkcd](https://xkcd.com/): A webcomic of romance, sarcasm, math, and language.
-    - [xkcd styled chart lib](https://github.com/timqian/chart.xkcd)
-
 ---
 
 ## Overview
+
+* xkcd styled chart
+    - [xkcd](https://xkcd.com/): A webcomic of romance, sarcasm, math, and language.
+    - [xkcd styled chart lib](https://github.com/timqian/chart.xkcd)
 
 * [Inkscape](https://inkscape.org/) is a professional vector graphics editor for Windows, Mac OS X and Linux. It's free and open source.
     * [InkscapeForum](http://www.inkscapeforum.com/)
@@ -44,17 +44,17 @@
 * [Asymptote: The Vector Graphics Language](http://asymptote.sourceforge.net/)
 
 
-## 思维导图(Mind Map)
+## Mind Map
 
 * [15款最好用的思维导图（心智图 ）工具](http://www.cnblogs.com/lhb25/p/15-best-mind-mapping-tools-designers.html)
-
-### MindManager
-
-http://www.mindmanager.cn/
 
 ### XMind
 
 [XMind](https://www.xmind.net/), a full-featured mind mapping and brainstorming tool, designed to generate ideas, inspire creativity, brings you efficiency both in work and life. Tens of million people love it.
+
+### MindManager
+
+- http://www.mindmanager.cn/
 
 ### FreeMind
 
