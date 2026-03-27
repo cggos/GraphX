@@ -68,7 +68,7 @@ graph {
 - Based on [libccv](https://pypi.org/project/libccv/)
 
 <p align="center">
-  <img src="https://mirror.ghproxy.com/https://github.com/cggos/ccv/blob/master/python/imgs/imgmatch_graphviz.png" style="width: 80%"/>
+  <img src="https://github.com/cggos/ccv/blob/master/python/imgs/imgmatch_graphviz.png" style="width: 80%"/>
 </p>
 
 ---
