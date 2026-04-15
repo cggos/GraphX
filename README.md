@@ -1,6 +1,6 @@
 # GraphX
 
-**Graphical Anything**
+**Graph Anything**
 
 GraphX is a research and experimentation repository dedicated to graph theory, data visualization, and graphical algorithms. It serves as a centralized hub for exploring various graph engines and visualization tools.
 
