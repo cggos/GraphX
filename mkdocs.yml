@@ -1,7 +1,7 @@
 site_name: GraphX
 site_author: Gavin Gao
 site_url: https://g.cgabc.xyz/
-site_description: Graphical Anything
+site_description: Graph theory, data structures, and visualization
 
 repo_url: https://github.com/cggos/GraphX
 repo_name: cggos/GraphX
@@ -17,8 +17,6 @@ theme:
   # palette:
   #   primary: 'light blue'
   #   accent: 'indigo' 
-  feature:
-    tabs: true
   features:
     - navigation.instant
     - navigation.tracking
@@ -46,13 +44,12 @@ markdown_extensions:
   - def_list
   - footnotes
   - toc:
-      permalink: true # "#"
+      permalink: true
       toc_depth: 5
       separator: "_"
-      slugify: !!python/name:pymdownx.slugs.uslugify_cased
-  - codehilite:
-      guess_lang: true
-      linenums: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.arithmatex
@@ -73,9 +70,8 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      # emoji_generator: !!python/name:pymdownx.emoji.to_png
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
 

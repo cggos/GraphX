@@ -1,14 +1,12 @@
 # GraphX
 
-- DSA: https://dsa.cgabc.xyz/
-
 ---
 
 ## Overview
 
 All with #Graph
 
-* DSA: Linked List, Tree
+* DSA: Linked List, Tree, Algorithms (see [`tree/`](https://github.com/cggos/GraphX/tree/main/tree) and [`dsa/`](https://github.com/cggos/GraphX/tree/main/dsa))
 * PGM: Factor Graph, Bayes Net, MRF 
 * Estimation: BP, DP, NLS
 * Chemistry: Molecular
