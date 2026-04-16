@@ -2,48 +2,64 @@
 
 **Graph Anything**
 
-GraphX is a research and experimentation repository dedicated to graph theory, data visualization, and graphical algorithms. It serves as a centralized hub for exploring various graph engines and visualization tools.
+GraphX is a research and experimentation repository for graph theory, data visualization, and graphical algorithms. It covers graph engines, visualization tools, and foundational data structures across multiple languages.
 
 ---
 
-## 🚀 Key Technologies
+## Key Technologies
 
-- **Graph Engines**: [igraph](https://igraph.org/) (Python & R), [GraphViz](https://graphviz.org/) (DOT)
-- **Visualization**: [cairocffi](https://pypi.org/project/cairocffi/), [Inkscape](https://inkscape.org/) (SVG)
-- **Documentation**: [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
-- **Languages**: Python, R, DOT, Markdown
-
----
-
-## 📁 Project Structure
-
-- `docs/`: Project documentation and guides.
-- `igraph/`: Implementations using the igraph library in Python and R.
-- `GraphViz/`: Examples and templates for the DOT language.
-- `Inkscape/`: SVG design templates.
-- `python/`: Custom graph data structure implementations and experiments.
+| Area | Tools |
+|---|---|
+| Graph Engines | [igraph](https://igraph.org/) (Python & R), [GraphViz](https://graphviz.org/) (DOT) |
+| Visualization | [cairocffi](https://pypi.org/project/cairocffi/), [Inkscape](https://inkscape.org/) (SVG) |
+| Data Structures | C++11 (linked lists, trees, algorithms) |
+| Documentation | [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) |
+| Languages | Python, R, C++, DOT |
 
 ---
 
-## 🛠️ Quick Start
+## Structure
+
+| Directory | Contents |
+|---|---|
+| `igraph/` | Python & R scripts using the igraph library |
+| `GraphViz/dot/` | DOT language graph definitions |
+| `python/` | Pure Python graph data structure experiments |
+| `tree/` | C++ binary tree implementations |
+| `dsa/` | C++ linked lists, algorithms, unit tests |
+| `Inkscape/` | SVG design templates |
+| `docs/` | MkDocs source files |
+
+---
+
+## Quick Start
 
 ### Documentation
-View the local documentation site:
 ```bash
-pip install mkdocs-material
+pip install mkdocs-material pymdown-extensions
 mkdocs serve
 ```
 
-### Python Experiments
-Install dependencies and run a sample script:
+### Python (igraph)
 ```bash
 pip install python-igraph cairocffi
 python igraph/python/ig00.py
 ```
 
+### GraphViz
+```bash
+dot -Tpng GraphViz/dot/test.dot -o test.png
+```
+
+### C++ (DSA)
+```bash
+cd dsa && mkdir -p build && cd build
+cmake .. && make
+```
+
 ---
 
-## 📊 Examples
+## Examples
 
 ### GraphViz with Dot
 
@@ -65,14 +81,8 @@ graph {
 
 ### Image Matching Graph
 
-- Based on [libccv](https://pypi.org/project/libccv/)
+Based on [libccv](https://pypi.org/project/libccv/)
 
 <p align="center">
   <img src="https://github.com/cggos/ccv/blob/master/python/imgs/imgmatch_graphviz.png" style="width: 80%"/>
 </p>
-
----
-
-## 🔗 Related Projects
-
-- [DSA (Data Structures and Algorithms)](https://github.com/cggos/DSA)
