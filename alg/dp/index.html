@@ -624,6 +624,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamic Programming
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -640,6 +658,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#经典问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        经典问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="经典问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#斐波那契数列" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        斐波那契数列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#饼干分配问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        饼干分配问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leetcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LeetCode
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -966,6 +1053,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#经典问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        经典问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="经典问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#斐波那契数列" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        斐波那契数列
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#饼干分配问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        饼干分配问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leetcode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LeetCode
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -986,6 +1131,40 @@
 
 <h1 id="dp_dynamic_programming">DP (Dynamic Programming)<a class="headerlink" href="#dp_dynamic_programming" title="Permanent link">&para;</a></h1>
 <hr />
+<p>动态规划将问题分解为**重叠子问题**，利用记忆化或递推避免重复计算。</p>
+<p>核心思路：定义状态 → 写出状态转移方程 → 确定边界条件。</p>
+<h2 id="经典问题">经典问题<a class="headerlink" href="#经典问题" title="Permanent link">&para;</a></h2>
+<h3 id="斐波那契数列">斐波那契数列<a class="headerlink" href="#斐波那契数列" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">fibonaci</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">fibonaci</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">fibonaci</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<p>Source: <a href="https://github.com/cggos/GraphX/tree/main/dsa/alg/permutation_combination.cpp"><code>dsa/alg/permutation_combination.cpp</code></a></p>
+</blockquote>
+<h3 id="饼干分配问题">饼干分配问题<a class="headerlink" href="#饼干分配问题" title="Permanent link">&para;</a></h3>
+<p><strong>问题1</strong>：n 块饼，每天吃 1~3 块，吃完为止，共有多少种吃法？</p>
+<p>状态转移：<code>f(n) = f(n-1) + f(n-2) + f(n-3)</code>，边界：<code>f(0)=1</code></p>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">f1</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">f1</span><span class="p">(</span><span class="n">n</span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f1</span><span class="p">(</span><span class="n">n</span><span class="mi">-2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f1</span><span class="p">(</span><span class="n">n</span><span class="mi">-3</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// f1(10) = 274</span>
+</code></pre></div>
+<p><strong>问题2</strong>：n 块饼干分 t 天吃完，每天吃 1 或 2 块，共有多少种吃法？</p>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">f2</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">t</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">f2</span><span class="p">(</span><span class="n">n</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">f2</span><span class="p">(</span><span class="n">n</span><span class="mi">-2</span><span class="p">,</span><span class="w"> </span><span class="n">t</span><span class="mi">-1</span><span class="p">);</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// f2(10, 7) = 35</span>
+</code></pre></div>
+<h2 id="leetcode">LeetCode<a class="headerlink" href="#leetcode" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://leetcode.cn/circle/discuss/tXLS3i/">动态规划精选题单</a></li>
+</ul>
 
 
 

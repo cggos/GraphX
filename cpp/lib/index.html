@@ -801,7 +801,7 @@
   <a href="#configure_file" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configure file
+        Configure File
       
     </span>
   </a>
@@ -1057,7 +1057,7 @@
   <a href="#configure_file" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configure file
+        Configure File
       
     </span>
   </a>
@@ -1098,15 +1098,64 @@
 <h1 id="c_libs">C++ Libs<a class="headerlink" href="#c_libs" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="time_utils">Time Utils<a class="headerlink" href="#time_utils" title="Permanent link">&para;</a></h2>
-<h2 id="configure_file">Configure file<a class="headerlink" href="#configure_file" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="http://config-plus.sourceforge.net/">libConfig++</a> is a portable and flexible C++ library for reading configuration files which were written in C style syntax</li>
-<li>JsonCpp</li>
-<li>libyaml-cpp</li>
-<li>rosparam</li>
-<li>cv::FileStorage</li>
-</ul>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;chrono&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">auto</span><span class="w"> </span><span class="n">t0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// ... code ...</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">auto</span><span class="w"> </span><span class="n">t1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">steady_clock</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kt">double</span><span class="w"> </span><span class="n">ms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">duration</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">milli</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">t0</span><span class="p">).</span><span class="n">count</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="configure_file">Configure File<a class="headerlink" href="#configure_file" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>库</th>
+<th>格式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://config-plus.sourceforge.net/">libConfig++</a></td>
+<td>自定义</td>
+<td>C-style 语法配置文件</td>
+</tr>
+<tr>
+<td>JsonCpp</td>
+<td>JSON</td>
+<td>C++ JSON 读写</td>
+</tr>
+<tr>
+<td>libyaml-cpp</td>
+<td>YAML</td>
+<td>C++ YAML 解析</td>
+</tr>
+<tr>
+<td>cv::FileStorage</td>
+<td>YAML/XML</td>
+<td>OpenCV 配置文件</td>
+</tr>
+</tbody>
+</table>
 <h2 id="log_utils">Log Utils<a class="headerlink" href="#log_utils" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>库</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/gabime/spdlog">spdlog</a></td>
+<td>高性能 C++ 日志，header-only</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google/glog">glog</a></td>
+<td>Google 日志库，支持日志级别和文件输出</td>
+</tr>
+</tbody>
+</table>
 
 
 

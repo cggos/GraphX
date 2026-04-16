@@ -652,6 +652,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="二叉树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#遍历" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        遍历
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#祖先查询" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        祖先查询
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#序列化与反序列化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        序列化与反序列化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -689,22 +728,56 @@
 <p>Source: <a href="https://github.com/cggos/GraphX/tree/main/tree"><code>tree/</code></a></p>
 <hr />
 <h2 id="二叉树">二叉树<a class="headerlink" href="#二叉树" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>遍历</p>
-<ul>
-<li>前序遍历</li>
-<li>中序遍历</li>
-<li>后序遍历</li>
-<li>层序遍历</li>
-</ul>
-</li>
-<li>
-<p>二叉树的序列化和反序列化</p>
-</li>
-</ul>
+<p>节点定义（<code>tree/binary_tree.h</code>）：</p>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">node</span><span class="w"> </span><span class="o">*</span><span class="n">lchild</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">rchild</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span><span class="w"> </span><span class="o">*</span><span class="n">BTREE</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="遍历">遍历<a class="headerlink" href="#遍历" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>顺序</th>
+<th>函数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前序遍历</td>
+<td>根 → 左 → 右</td>
+<td><code>PreOrderTraverse(BTREE&amp;)</code></td>
+</tr>
+<tr>
+<td>中序遍历</td>
+<td>左 → 根 → 右</td>
+<td><code>Inorder(BTREE&amp;)</code></td>
+</tr>
+<tr>
+<td>后序遍历</td>
+<td>左 → 右 → 根</td>
+<td><code>Posorder(BTREE&amp;)</code></td>
+</tr>
+<tr>
+<td>层序遍历</td>
+<td>逐层从左到右</td>
+<td>见 <a href="../alg/traversal/#bfs-breadth-first-search">Traversal - BFS</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>二叉搜索树的中序遍历结果为递增序列。</p>
+</blockquote>
+<h3 id="祖先查询">祖先查询<a class="headerlink" href="#祖先查询" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Ancestor</span><span class="p">(</span><span class="n">BTREE</span><span class="w"> </span><span class="n">tree</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">item</span><span class="p">);</span><span class="w">  </span><span class="c1">// 输出节点 item 的所有祖先节点</span>
+</code></pre></div>
+<h3 id="序列化与反序列化">序列化与反序列化<a class="headerlink" href="#序列化与反序列化" title="Permanent link">&para;</a></h3>
+<p>将二叉树转换为字符串表示，再还原为树结构，常用于持久化或网络传输。</p>
 <h2 id="leetcode">LeetCode<a class="headerlink" href="#leetcode" title="Permanent link">&para;</a></h2>
-<p>leetcode 236: 二叉树两结点的最近共同祖先结点</p>
+<ul>
+<li>leetcode 236: 二叉树两结点的最近公共祖先</li>
+</ul>
 
 
 
