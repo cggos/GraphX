@@ -7,10 +7,10 @@ project(DSA)
 
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -std=c++11 -Wall")
 
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/..)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/linked_list SRC_LL)
-aux_source_directory(${PROJECT_SOURCE_DIR}/tree SRC_TREE)
+aux_source_directory(${PROJECT_SOURCE_DIR}/../tree SRC_TREE)
 
 add_executable(linked_list ${SRC_LL})
 add_executable(binary_tree ${SRC_TREE})
