@@ -97,13 +97,14 @@ nav:
   - Tree:
     - Overview: tree/README.md
 
-  - Algorithms:
-    - Overview: alg/README.md
-    - Traversal: alg/traversal.md
-    - Search: alg/search.md
-    - Sort: alg/sort.md
-    - Dynamic Programming: alg/dp.md
-
-  - C++:
-    - Overview: cpp/README.md
-    - Libs: cpp/lib.md
+  - DSA:
+    - Overview: dsa/index.md
+    - Algorithms:
+      - Overview: alg/README.md
+      - Traversal: alg/traversal.md
+      - Search: alg/search.md
+      - Sort: alg/sort.md
+      - Dynamic Programming: alg/dp.md
+    - C++:
+      - Overview: cpp/README.md
+      - Libs: cpp/lib.md
