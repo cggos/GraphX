@@ -1,26 +1,19 @@
-# Data Structures and Algorithms (DSA) :sunny:
+# Data Structures and Algorithms (DSA)
 
-A collection of data structures and algorithms implemented in C++11, featuring various implementations for linked lists, trees, and general algorithms.
+C++11 implementations of fundamental data structures and algorithms, living as a subdirectory of [GraphX](https://github.com/cggos/GraphX).
+
+> **Note:** Binary tree code lives at `../tree/` (GraphX root), compiled here as the `binary_tree` target.
 
 ---
 
-## Features
+## Contents
 
-- **Linked Lists**: Single and double linked list implementations.
-- **Trees**: Binary tree traversals and operations.
-- **Algorithms**: Memory alignment, permutations, combinations, and more.
-- **Unit Testing**: Comprehensive tests using Google Test.
-- **Documentation**: Detailed MD docs for various DSA topics.
+- **`linked_list/`** — Single and double linked list implementations
+- **`alg/`** — Memory alignment, permutations, combinations, and more
+- **`mix/`** — Queue, sparse matrix
+- **`unit_test/`** — Google Test suite (requires external `cgads` library)
 
-## Getting Started
-
-### Prerequisites
-
-- C++11 compatible compiler (e.g., GCC, Clang)
-- CMake 3.0 or higher
-- Google Test (optional, for running tests)
-
-### Build Instructions
+## Build
 
 ```bash
 mkdir build && cd build
@@ -28,37 +21,22 @@ cmake ..
 make
 ```
 
-### Running Examples
+Targets: `linked_list`, `binary_tree`, `sparse_matrix`, `algorithm`, `mem_align`, `array_string`, `permutation_combination`, and more.
 
-After building, you can run various executables generated in the build directory:
-
-```bash
-./linked_list
-./binary_tree
-./algorithm
-```
-
-### Running Tests
+### Tests
 
 ```bash
-cd build
 ctest
-# Or run the unit test binary directly
+# or directly:
 ./unit_test/unit_test.run
 ```
 
+GTest is auto-detected by CMake. `unit_test` additionally requires the `cgads` library.
+
 ## Documentation
 
-Documentation is located in the `docs/` directory. You can also use [MkDocs](https://www.mkdocs.org/) to serve the documentation:
+Docs are in `../docs/tree/`, `../docs/alg/`, `../docs/cpp/` and served via the GraphX MkDocs site:
 
 ```bash
-mkdocs serve
+cd .. && mkdocs serve
 ```
-
-## Related Projects
-
-- [GraphX](https://github.com/cggos/GraphX): A graph processing library.
-
-## License
-
-This project is licensed under the BSD-style license - see the [LICENSE](LICENSE) file for details.
