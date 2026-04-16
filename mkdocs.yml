@@ -81,22 +81,13 @@ extra:
       link: https://github.com/cggos
       name: cggos on GitHub
     - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/CGiABC
+      link: https://twitter.com/GavnGao
       name: CGABC on Twitter
 
 
 nav:
   - Home: index.md
   
-  - Math Graphics:
-    - Overview: Graphics.md
-  
-  - Diagrams:
-    - Overview: Diagrams.md
-
-  - Tree:
-    - Overview: tree/README.md
-
   - DSA:
     - Overview: dsa/index.md
     - Algorithms:
@@ -108,3 +99,12 @@ nav:
     - C++:
       - Overview: cpp/README.md
       - Libs: cpp/lib.md
+
+  - Tree:
+    - Overview: tree/README.md
+
+  - Math Graphics:
+    - Overview: Graphics.md
+  
+  - Diagrams:
+    - Overview: Diagrams.md
