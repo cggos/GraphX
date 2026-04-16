@@ -2,17 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://g.cgabc.xyz/</loc>
-         <lastmod>2024-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-04-16</lastmod>
     </url>
     <url>
          <loc>https://g.cgabc.xyz/Diagrams/</loc>
-         <lastmod>2024-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-04-16</lastmod>
     </url>
     <url>
          <loc>https://g.cgabc.xyz/Graphics/</loc>
-         <lastmod>2024-05-05</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/alg/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/alg/dp/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/alg/search/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/alg/sort/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/alg/traversal/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/cpp/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/cpp/lib/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/dsa/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/superpowers/plans/2026-04-16-dsa-merge/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/superpowers/specs/2026-04-16-dsa-merge-design/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://g.cgabc.xyz/tree/</loc>
+         <lastmod>2026-04-16</lastmod>
     </url>
 </urlset>

@@ -12,26 +12,24 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://g.cgabc.xyz/">
+        <link rel="canonical" href="https://g.cgabc.xyz/superpowers/specs/2026-04-16-dsa-merge-design/">
       
       
-      
-        <link rel="next" href="dsa/">
       
       
         
       
       
-      <link rel="icon" href="images/favicon.png">
+      <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>GraphX</title>
+        <title>Design: Merge DSA into GraphX - GraphX</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -50,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#graphx" class="md-skip">
+        <a href="#design_merge_dsa_into_graphx" class="md-skip">
           跳转至
         </a>
       
@@ -82,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="GraphX" class="md-header__button md-logo" aria-label="GraphX" data-md-component="logo">
+    <a href="../../.." title="GraphX" class="md-header__button md-logo" aria-label="GraphX" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Design: Merge DSA into GraphX
             
           </span>
         </div>
@@ -185,11 +183,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -210,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="dsa/" class="md-tabs__link">
+        <a href="../../../dsa/" class="md-tabs__link">
           
   
   
@@ -232,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="tree/" class="md-tabs__link">
+        <a href="../../../tree/" class="md-tabs__link">
           
   
   
@@ -254,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Graphics/" class="md-tabs__link">
+        <a href="../../../Graphics/" class="md-tabs__link">
           
   
   
@@ -276,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Diagrams/" class="md-tabs__link">
+        <a href="../../../Diagrams/" class="md-tabs__link">
           
   
   
@@ -312,7 +308,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="GraphX" class="md-nav__button md-logo" aria-label="GraphX" data-md-component="logo">
+    <a href="../../.." title="GraphX" class="md-nav__button md-logo" aria-label="GraphX" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -339,37 +335,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -385,109 +354,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#graph_theory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Graph Theory
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#libs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Libs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gallery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gallery
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#app" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        App
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="App">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#graph_and_tensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Graph and Tensor
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graph_and_slam" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Graph and SLAM
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -529,7 +395,7 @@
   
   
   
-    <a href="dsa/" class="md-nav__link">
+    <a href="../../../dsa/" class="md-nav__link">
       
   
   
@@ -588,7 +454,7 @@
   
   
   
-    <a href="tree/" class="md-nav__link">
+    <a href="../../../tree/" class="md-nav__link">
       
   
   
@@ -645,7 +511,7 @@
   
   
   
-    <a href="Graphics/" class="md-nav__link">
+    <a href="../../../Graphics/" class="md-nav__link">
       
   
   
@@ -702,7 +568,7 @@
   
   
   
-    <a href="Diagrams/" class="md-nav__link">
+    <a href="../../../Diagrams/" class="md-nav__link">
       
   
   
@@ -755,10 +621,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#goal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Goal
       
     </span>
   </a>
@@ -766,10 +632,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph_theory" class="md-nav__link">
+  <a href="#target_directory_structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Graph Theory
+        Target Directory Structure
       
     </span>
   </a>
@@ -777,10 +643,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#libs" class="md-nav__link">
+  <a href="#file_decisions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Libs
+        File Decisions
       
     </span>
   </a>
@@ -788,10 +654,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gallery" class="md-nav__link">
+  <a href="#cmakeliststxt_changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gallery
+        CMakeLists.txt Changes
       
     </span>
   </a>
@@ -799,41 +665,24 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#app" class="md-nav__link">
+  <a href="#mkdocsyml_changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        App
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="App">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#graph_and_tensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Graph and Tensor
+        mkdocs.yml Changes
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#graph_and_slam" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#build__test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Graph and SLAM
+        Build &amp; Test
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -857,33 +706,127 @@
   
 
 
-<h1 id="graphx">GraphX<a class="headerlink" href="#graphx" title="Permanent link">&para;</a></h1>
-<hr />
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>All with #Graph</p>
-<ul>
-<li>DSA: Linked List, Tree, Algorithms (see <a href="https://github.com/cggos/GraphX/tree/main/tree"><code>tree/</code></a> and <a href="https://github.com/cggos/GraphX/tree/main/dsa"><code>dsa/</code></a>)</li>
-<li>PGM: Factor Graph, Bayes Net, MRF </li>
-<li>Estimation: BP, DP, NLS</li>
-<li>Chemistry: Molecular</li>
-</ul>
-<h2 id="graph_theory">Graph Theory<a class="headerlink" href="#graph_theory" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://leetcode.cn/circle/discuss/FyPTTM/">图论算法从入门到放下 (LeetCode)</a></li>
-</ul>
-<h2 id="libs">Libs<a class="headerlink" href="#libs" title="Permanent link">&para;</a></h2>
-<ul>
-<li>igraph</li>
-<li><a href="https://github.com/boostorg/graph">Boost Graph Library(BGL)</a></li>
-<li><a href="https://wiki.python.org/moin/PythonGraphLibraries">Python Graph Libraries</a></li>
-</ul>
-<h2 id="gallery">Gallery<a class="headerlink" href="#gallery" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://python-graph-gallery.com/">Python Graph Gallery</a></li>
-</ul>
-<h2 id="app">App<a class="headerlink" href="#app" title="Permanent link">&para;</a></h2>
-<h3 id="graph_and_tensor">Graph and Tensor<a class="headerlink" href="#graph_and_tensor" title="Permanent link">&para;</a></h3>
-<h3 id="graph_and_slam">Graph and SLAM<a class="headerlink" href="#graph_and_slam" title="Permanent link">&para;</a></h3>
+<h1 id="design_merge_dsa_into_graphx">Design: Merge DSA into GraphX<a class="headerlink" href="#design_merge_dsa_into_graphx" title="Permanent link">&para;</a></h1>
+<p><strong>Date:</strong> 2026-04-16<br />
+<strong>Approach:</strong> Plan A — direct file copy, no git history preservation</p>
+<h2 id="goal">Goal<a class="headerlink" href="#goal" title="Permanent link">&para;</a></h2>
+<p>Merge the contents of the sibling repository <code>/opt/user_data/code/DSA</code> into GraphX. DSA contains C++ implementations of linked lists, trees, and general algorithms, plus MkDocs documentation.</p>
+<h2 id="target_directory_structure">Target Directory Structure<a class="headerlink" href="#target_directory_structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>GraphX/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── tree/                        # From DSA/tree/ — tree is a graph subtype, lives at root
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── binary_tree.cc / .h
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   ├── binary_tree_01.cc / .h
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   └── main.cc
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── dsa/                         # New subdirectory for remaining DSA content
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│   ├── alg/                     # DSA/alg/ unchanged
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ├── linked_list/             # DSA/linked_list/ unchanged
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   ├── mix/                     # DSA/mix/ unchanged
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   ├── unit_test/               # DSA/unit_test/ unchanged
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   ├── .clang-format
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│   ├── README.md                # DSA&#39;s original README
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│   └── CMakeLists.txt           # Adjusted for new tree/ path
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>├── docs/
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│   ├── tree/README.md           # From DSA docs/tree/
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│   ├── alg/
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│   │   ├── README.md
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│   │   ├── dp.md
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>│   │   ├── search.md
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│   │   ├── sort.md
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>│   │   └── traversal.md
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│   ├── cpp/
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│   │   ├── README.md
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│   │   └── lib.md
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>│   └── ... (existing GraphX docs unchanged)
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>│
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>└── mkdocs.yml                   # Extended with Tree / Algorithms / C++ nav sections
+</code></pre></div>
+<h2 id="file_decisions">File Decisions<a class="headerlink" href="#file_decisions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>DSA file</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tree/</code></td>
+<td>Copy to <code>GraphX/tree/</code></td>
+</tr>
+<tr>
+<td><code>alg/</code>, <code>linked_list/</code>, <code>mix/</code>, <code>unit_test/</code></td>
+<td>Copy to <code>GraphX/dsa/&lt;dir&gt;/</code></td>
+</tr>
+<tr>
+<td><code>.clang-format</code></td>
+<td>Copy to <code>GraphX/dsa/</code></td>
+</tr>
+<tr>
+<td><code>CMakeLists.txt</code></td>
+<td>Copy to <code>GraphX/dsa/</code>, adjust tree path</td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td>Copy to <code>GraphX/dsa/README.md</code></td>
+</tr>
+<tr>
+<td><code>docs/tree/</code>, <code>docs/alg/</code>, <code>docs/cpp/</code></td>
+<td>Copy to <code>GraphX/docs/&lt;dir&gt;/</code></td>
+</tr>
+<tr>
+<td><code>GEMINI.md</code></td>
+<td>Skip — GraphX has CLAUDE.md</td>
+</tr>
+<tr>
+<td><code>LICENSE</code></td>
+<td>Skip — GraphX has its own LICENSE</td>
+</tr>
+<tr>
+<td><code>docs/CNAME</code></td>
+<td>Skip — GraphX already has one</td>
+</tr>
+<tr>
+<td><code>mkdocs.yml</code></td>
+<td>Skip — GraphX's mkdocs.yml extended instead</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cmakeliststxt_changes">CMakeLists.txt Changes<a class="headerlink" href="#cmakeliststxt_changes" title="Permanent link">&para;</a></h2>
+<p><code>dsa/CMakeLists.txt</code> needs two path adjustments because <code>tree/</code> moves from <code>dsa/tree/</code> to <code>../tree/</code>:</p>
+<div class="highlight"><span class="filename">CMake</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c"># Before</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_SOURCE_DIR</span><span class="o">}</span><span class="p">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">aux_source_directory</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_SOURCE_DIR</span><span class="o">}</span><span class="s">/tree</span><span class="w"> </span><span class="s">SRC_TREE</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c"># After</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_SOURCE_DIR</span><span class="o">}</span><span class="w"> </span><span class="o">${</span><span class="nv">PROJECT_SOURCE_DIR</span><span class="o">}</span><span class="s">/..</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">aux_source_directory</span><span class="p">(</span><span class="o">${</span><span class="nv">PROJECT_SOURCE_DIR</span><span class="o">}</span><span class="s">/../tree</span><span class="w"> </span><span class="s">SRC_TREE</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="mkdocsyml_changes">mkdocs.yml Changes<a class="headerlink" href="#mkdocsyml_changes" title="Permanent link">&para;</a></h2>
+<p>Append three new nav sections to GraphX's <code>mkdocs.yml</code>:</p>
+<div class="highlight"><span class="filename">YAML</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Tree</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Overview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tree/README.md</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Algorithms</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Overview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alg/README.md</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Traversal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alg/traversal.md</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Search</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alg/search.md</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Sort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alg/sort.md</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Dynamic Programming</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alg/dp.md</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">C++</span><span class="p">:</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Overview</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpp/README.md</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Libs</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpp/lib.md</span>
+</code></pre></div>
+<h2 id="build__test">Build &amp; Test<a class="headerlink" href="#build__test" title="Permanent link">&para;</a></h2>
+<p>After merge, DSA's C++ code is built from <code>GraphX/dsa/</code>:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>GraphX/dsa
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>cmake<span class="w"> </span>..
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>make
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ctest
+</code></pre></div>
 
 
 
@@ -960,10 +903,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
